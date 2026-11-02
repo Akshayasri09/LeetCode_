@@ -2,10 +2,10 @@ class Solution {
     public int minMoves2(int[] nums) {
         Arrays.sort(nums);
         int m=nums[nums.length/2];
-        long move=0;
+        int c=0;
         for(int num:nums) {
-            move+=Math.abs(num-m);
+            c+=Math.abs(num-m);
         }
-        return(int)move;
+        return c;
     }
 }
